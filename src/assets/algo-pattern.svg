@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <style>
+      .icon-stroke {
+        stroke: #64748b;
+        stroke-width: 1.1;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .node-fill {
+        fill: #f8fafc;
+        stroke: #64748b;
+        stroke-width: 1.1;
+      }
+      .faint {
+        opacity: 0.28;
+      }
+      .extra-faint {
+        opacity: 0.18;
+      }
+    </style>
+  </defs>
+
+  <!-- 1. Top-Left: Constellation / Connected Graph Cluster -->
+  <g class="faint" transform="translate(30, 25)">
+    <line x1="10" y1="20" x2="45" y2="10" class="icon-stroke" />
+    <line x1="45" y1="10" x2="60" y2="40" class="icon-stroke" />
+    <line x1="10" y1="20" x2="35" y2="55" class="icon-stroke" />
+    <line x1="35" y1="55" x2="60" y2="40" class="icon-stroke" />
+    <line x1="10" y1="20" x2="60" y2="40" class="icon-stroke" />
+    <circle cx="10" cy="20" r="3" class="node-fill" />
+    <circle cx="45" cy="10" r="2.5" class="node-fill" />
+    <circle cx="60" cy="40" r="3" class="node-fill" />
+    <circle cx="35" cy="55" r="2.5" class="node-fill" />
+  </g>
+
+  <!-- 2. Top-Right: Golden Ratio / Fibonacci Spiral Box -->
+  <g class="faint" transform="translate(320, 20)">
+    <rect x="0" y="0" width="48" height="48" class="icon-stroke" />
+    <line x1="30" y1="0" x2="30" y2="48" class="icon-stroke" />
+    <line x1="30" y1="30" x2="48" y2="30" class="icon-stroke" />
+    <line x1="41" y1="30" x2="41" y2="48" class="icon-stroke" />
+    <path d="M 0 48 A 48 48 0 0 1 48 0" class="icon-stroke" />
+    <path d="M 30 48 A 18 18 0 0 1 48 30" class="icon-stroke" />
+  </g>
+
+  <!-- 3. Mid-Right: Binary Search Tree / Min-Heap -->
+  <g class="faint" transform="translate(330, 115)">
+    <line x1="25" y1="10" x2="10" y2="30" class="icon-stroke" />
+    <line x1="25" y1="10" x2="40" y2="30" class="icon-stroke" />
+    <line x1="10" y1="30" x2="5" y2="48" class="icon-stroke" />
+    <line x1="10" y1="30" x2="18" y2="48" class="icon-stroke" />
+    <circle cx="25" cy="10" r="3" class="node-fill" />
+    <circle cx="10" cy="30" r="2.5" class="node-fill" />
+    <circle cx="40" cy="30" r="2.5" class="node-fill" />
+    <circle cx="5" cy="48" r="2" class="node-fill" />
+    <circle cx="18" cy="48" r="2" class="node-fill" />
+  </g>
+
+  <!-- 4. Far Left: Queue / Memory Stack with Directional Arrow -->
+  <g class="faint" transform="translate(25, 145)">
+    <rect x="0" y="0" width="16" height="5" rx="1" class="icon-stroke" />
+    <rect x="0" y="7" width="16" height="5" rx="1" class="icon-stroke" />
+    <rect x="0" y="14" width="16" height="5" rx="1" class="icon-stroke" />
+    <rect x="0" y="21" width="16" height="5" rx="1" class="icon-stroke" />
+    <path d="M 22 5 L 22 23 M 19 20 L 22 23 L 25 20" class="icon-stroke" />
+  </g>
+
+  <!-- 5. Mid-Left: Cycle / Refresh Traversal Loop -->
+  <g class="faint" transform="translate(35, 230)">
+    <path d="M 22 10 A 10 10 0 0 0 8 18" class="icon-stroke" />
+    <polyline points="5,15 8,18 11,15" class="icon-stroke" />
+    <path d="M 8 22 A 10 10 0 0 0 22 14" class="icon-stroke" />
+    <polyline points="25,17 22,14 19,17" class="icon-stroke" />
+  </g>
+
+  <!-- 6. Bottom-Center: Geometric Wireframe Cube (Isometric) -->
+  <g class="extra-faint" transform="translate(230, 290)">
+    <!-- Outer Diamond -->
+    <polygon points="20,0 40,12 20,24 0,12" class="icon-stroke" />
+    <!-- Vertical Drops -->
+    <line x1="0" y1="12" x2="0" y2="34" class="icon-stroke" />
+    <line x1="40" y1="12" x2="40" y2="34" class="icon-stroke" />
+    <line x1="20" y1="24" x2="20" y2="46" class="icon-stroke" />
+    <!-- Bottom Edges -->
+    <line x1="0" y1="34" x2="20" y2="46" class="icon-stroke" />
+    <line x1="40" y1="34" x2="20" y2="46" class="icon-stroke" />
+  </g>
+
+  <!-- 7. Bottom-Right: Concentric Wave Expansion (BFS / Dijkstra Wave) -->
+  <g class="faint" transform="translate(260, 310)">
+    <circle cx="25" cy="25" r="5" class="icon-stroke" />
+    <circle cx="25" cy="25" r="12" class="icon-stroke" />
+    <circle cx="25" cy="25" r="19" class="icon-stroke" />
+    <circle cx="25" cy="25" r="26" class="icon-stroke" />
+  </g>
+
+  <!-- 8. Bottom-Left: Star / Cluster Node Motif -->
+  <g class="faint" transform="translate(45, 305)">
+    <circle cx="20" cy="20" r="2.5" class="node-fill" />
+    <line x1="20" y1="20" x2="8" y2="12" class="icon-stroke" />
+    <circle cx="8" cy="12" r="2" class="node-fill" />
+    <line x1="20" y1="20" x2="32" y2="14" class="icon-stroke" />
+    <circle cx="32" cy="14" r="2" class="node-fill" />
+    <line x1="20" y1="20" x2="22" y2="34" class="icon-stroke" />
+    <circle cx="22" cy="34" r="2" class="node-fill" />
+    <line x1="20" y1="20" x2="9" y2="28" class="icon-stroke" />
+    <circle cx="9" cy="28" r="1.8" class="node-fill" />
+  </g>
+
+  <!-- 9. Subtle 4x4 Dot Matrix (Grid Coordinate Anchor) -->
+  <g class="extra-faint" transform="translate(100, 335)">
+    <circle cx="0" cy="0" r="1" fill="#64748b" />
+    <circle cx="5" cy="0" r="1" fill="#64748b" />
+    <circle cx="10" cy="0" r="1" fill="#64748b" />
+    <circle cx="0" cy="5" r="1" fill="#64748b" />
+    <circle cx="5" cy="5" r="1" fill="#64748b" />
+    <circle cx="10" cy="5" r="1" fill="#64748b" />
+    <circle cx="0" cy="10" r="1" fill="#64748b" />
+    <circle cx="5" cy="10" r="1" fill="#64748b" />
+    <circle cx="10" cy="10" r="1" fill="#64748b" />
+  </g>
+</svg>
